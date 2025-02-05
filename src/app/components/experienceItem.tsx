@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface ExperienceItemProps {
   experience: {
     company: string;
-    title: string;
+    title?: string;
     startDate: string;
     endDate: string;
     icon: {
@@ -14,6 +13,8 @@ interface ExperienceItemProps {
       alt: string;
       bgColor: string;
     };
+    location?: string;
+    focus?: string;
   };
 }
 
@@ -37,6 +38,8 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
       <div className="flex flex-col justify-start gap-1 flex-1">
         <h4 className="text-lg">{experience.company}</h4>
         <p className="text-muted-foreground">{experience.title}</p>
+        <p className="text-muted-foreground">{experience.focus}</p>
+        <p className="text-muted-foreground">{experience.location}</p>
         <p className="text-muted-foreground">
           {experience.startDate} - {experience.endDate}
         </p>

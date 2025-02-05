@@ -1,5 +1,6 @@
 import React from "react";
 import { experienceData } from "@/data/experience";
+import { educationData } from "@/data/education";
 import { ExperienceItem } from "@/app/components/experienceItem";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -24,8 +25,8 @@ export const Experience = () => {
           <TabsContent value="education">
             <div className="border rounded-xl bg-card text-card-foreground shadow">
               <ul className="ml-10 border-l">
-                {experienceData.map((experience, index) => (
-                  <ExperienceItem key={index} experience={experience} />
+                {educationData.map((education, index) => (
+                  <ExperienceItem key={index} experience={education} />
                 ))}
               </ul>
             </div>

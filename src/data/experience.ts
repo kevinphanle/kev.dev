@@ -1,5 +1,18 @@
 export const experienceData = [
   {
+    title: "UI Engineer",
+    icon: {
+      url: "/work-icons/apple.png",
+      alt: "Apple",
+      bgColor: "#fff",
+    },
+    company: "Apple",
+    location: "Sunnyvale, California",
+    startDate: "Dec 2024",
+    endDate: "Present",
+    description: "Description",
+  },
+  {
     title: "Frontend Web Developer",
     icon: {
       url: "/work-icons/zendesk.svg",
@@ -7,35 +20,9 @@ export const experienceData = [
       bgColor: "#fff",
     },
     company: "Zendesk",
-    location: "City, Country",
-    startDate: "Month Year",
-    endDate: "Month Year",
-    description: "Description",
-  },
-  {
-    title: "Software Engineer",
-    icon: {
-      url: "/work-icons/zendesk.svg",
-      alt: "Zendesk",
-      bgColor: "#fff",
-    },
-    company: "Company",
-    location: "City, Country",
-    startDate: "Month Year",
-    endDate: "Month Year",
-    description: "Description",
-  },
-  {
-    title: "Software Engineer",
-    icon: {
-      url: "/work-icons/zendesk.svg",
-      alt: "Zendesk",
-      bgColor: "#fff",
-    },
-    company: "Company",
-    location: "City, Country",
-    startDate: "Month Year",
-    endDate: "Month Year",
+    location: "San Francisco, California",
+    startDate: "Jun 2021",
+    endDate: "Nov 2024",
     description: "Description",
   },
 ];
