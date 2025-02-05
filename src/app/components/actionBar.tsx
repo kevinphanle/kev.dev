@@ -8,7 +8,7 @@ export const ActionBar = () => {
   return (
     <section className="flex items-center">
       <Button variant="outline" className="mr-4">
-        <Link href="#" className="flex items-center space-x-1 ">
+        <Link href="#" className="flex items-center" target="_blank">
           <span>Resume</span>
           <FileDown size={16} />
         </Link>
