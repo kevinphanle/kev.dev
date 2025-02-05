@@ -27,7 +27,7 @@ export function Bio({ bio }: BioProps) {
       />
 
       <div className="ml-4 flex-1">
-        <h1 className="mb-0.5 text-xl">Hey, I'm {bio.name}</h1>
+        <h1 className="mb-0.5 text-4xl">Hey, I'm {bio.name}</h1>
         <p className="text-muted-foreground text-sm">{bio.jobTitle}</p>
       </div>
     </section>

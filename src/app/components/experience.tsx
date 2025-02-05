@@ -7,7 +7,7 @@ export const Experience = () => {
   return (
     <div>
       <section className="my-9 text-sm">
-        <Tabs defaultValue="experience" className="w-full mt-8">
+        <Tabs defaultValue="experience" className="w-full">
           <TabsList>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
