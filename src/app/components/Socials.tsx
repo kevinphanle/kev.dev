@@ -1,7 +1,10 @@
-import { socialData } from "@/data/socials";
+import socialData from "@/data/socials.json";
+import { socialSchema } from "@/lib/schemas";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Socials() {
+  const socials = socialSchema.parse(socialData).socials;
+
   function getIcon(name: string) {
     switch (name) {
       case "GitHub":
@@ -16,7 +19,7 @@ export default function Socials() {
   }
   return (
     <div className="flex gap-4">
-      {socialData.map((social, index) => (
+      {socials.map((social, index) => (
         <a
           key={index}
           href={social.url}

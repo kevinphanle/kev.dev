@@ -7,22 +7,40 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Project } from "@/lib/schemas";
+import Image from "next/image";
+import Link from "next/link";
 
-export const ProjectItem = () => {
+interface Props {
+  project: Project;
+}
+
+export function ProjectItem({ project }: Props) {
+  const { title, description, stack, source, image } = project;
   return (
     <li>
       <Card>
         <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
+          {image && (
+            <Link href={source || image}>
+              <Image
+                src={image}
+                alt={title}
+                width={300}
+                height={200}
+                className="h-40 w-full object-cover object-top"
+              />
+            </Link>
+          )}
         </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
+        <CardContent className="flex flex-col gap-2">
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
         </CardContent>
         <CardFooter>
-          <p>Card Footer</p>
+          <p>{source}</p>
         </CardFooter>
       </Card>
     </li>
   );
-};
+}

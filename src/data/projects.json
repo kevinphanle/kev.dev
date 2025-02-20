@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "This portfolio website to document my journey as a software engineer.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": ""
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "This portfolio website to document my journey as a software engineer.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": ""
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "This portfolio website to document my journey as a software engineer.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": ""
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "This portfolio website to document my journey as a software engineer.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": ""
+    }
+  ]
+}
