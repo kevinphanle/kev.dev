@@ -10,19 +10,33 @@ import {
 import { Project } from "@/lib/schemas";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Github, ExternalLink } from "lucide-react";
 
 interface Props {
   project: Project;
 }
 
 export function ProjectItem({ project }: Props) {
-  const { title, description, stack, source, image } = project;
+  const { title, description, stack, links, image } = project;
+  const getIcon = (link: { icon: string }) => {
+    switch (link.icon) {
+      case "github":
+        return <Github name="github" className="size-3" />;
+      default:
+        return <ExternalLink name="external-link" className="size-3" />;
+    }
+  };
   return (
     <li>
       <Card>
         <CardHeader>
           {image && (
-            <Link href={source || image}>
+            <Link
+              href={
+                links.find((link) => link.name === "website")?.href || image
+              }
+            >
               <Image
                 src={image}
                 alt={title}
@@ -37,8 +51,32 @@ export function ProjectItem({ project }: Props) {
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardContent>
-        <CardFooter>
-          <p>{source}</p>
+        <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
+          {stack && stack.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1">
+              {stack.toSorted().map((tag) => (
+                <Badge
+                  key={tag}
+                  className="px-1 py-0 text-[10px]"
+                  variant="secondary"
+                >
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          )}
+
+          {links && links.length > 0 && (
+            <div className="flex flex-row flex-wrap items-start gap-1">
+              {links.toSorted().map((link, idx) => (
+                <Link href={link?.href} key={idx} target="_blank">
+                  <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                    {getIcon(link)}{" "}
+                  </Badge>
+                </Link>
+              ))}
+            </div>
+          )}
         </CardFooter>
       </Card>
     </li>

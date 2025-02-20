@@ -4,7 +4,13 @@ export const project = z.object({
   title: z.string(),
   description: z.string(),
   stack: z.array(z.string()),
-  source: z.string().optional(),
+  links: z.array(
+    z.object({
+      name: z.string(),
+      href: z.string(),
+      icon: z.string(),
+    })
+  ),
   image: z.string().optional(),
 });
 

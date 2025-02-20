@@ -2,17 +2,17 @@
   "socials": [
     {
       "name": "GitHub",
-      "url": "",
+      "url": "https://github.com/kevinphanle",
       "icon": "github"
     },
     {
       "name": "LinkedIn",
-      "url": "",
+      "url": "https://www.linkedin.com/in/kevinphanle/",
       "icon": "linkedin"
     },
     {
       "name": "Email",
-      "url": "",
+      "url": "mailto:kevinphanle11@gmail.com",
       "icon": "email"
     }
   ]
