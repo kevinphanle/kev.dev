@@ -28,7 +28,7 @@ export function ProjectItem({ project }: Props) {
                 alt={title}
                 width={300}
                 height={200}
-                className="h-40 w-full object-cover object-top"
+                className="w-full object-cover object-top"
               />
             </Link>
           )}

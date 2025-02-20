@@ -1,28 +1,46 @@
 {
   "projects": [
     {
-      "title": "Portfolio Website",
-      "description": "This portfolio website to document my journey as a software engineer.",
-      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
-      "source": ""
+      "title": "EarthFlix",
+      "description": "Nature video streaming service modeled after Netflix. This is one of the favorite projects as I have been with it since the beginning of my career as a developer. I have learned many techniques through Earthflix.",
+      "stack": ["Ruby", "Rails", "React", "Redux", "PostgreSQL"],
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Earthflix+Splash.webp"
     },
     {
-      "title": "Portfolio Website",
-      "description": "This portfolio website to document my journey as a software engineer.",
+      "title": "Unshelled",
+      "description": "Platform geared towards taco lovers to discover local taco eateries. Designed with Untappd in mind.",
       "stack": ["Next.js", "TypeScript", "TailwindCSS"],
-      "source": ""
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Unshelled+Splash.webp"
     },
     {
-      "title": "Portfolio Website",
-      "description": "This portfolio website to document my journey as a software engineer.",
+      "title": "Ripcamp",
+      "description": "Online marketplace used to discover hidden surfing spots emulating Hipcamp.",
       "stack": ["Next.js", "TypeScript", "TailwindCSS"],
-      "source": ""
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Ripcamp+Splash.webp"
     },
     {
-      "title": "Portfolio Website",
-      "description": "This portfolio website to document my journey as a software engineer.",
+      "title": "Google Keep Clone",
+      "description": "A full stack todo app clone of Google Keep using the MERN stack.",
       "stack": ["Next.js", "TypeScript", "TailwindCSS"],
-      "source": ""
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Google+Keep+Mockup.webp"
+    },
+    {
+      "title": "Balbin & Upson Tax Service",
+      "description": "Freelance work for an online portfolio page for a local tax business.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Balbin+Upson+Mockup.webp"
+    },
+    {
+      "title": "MarioMatch",
+      "description": "Interactive match-3 game inspired by Bejeweled using retro Mario icons.",
+      "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+      "source": "",
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Mario+Match+Mockup.webp"
     }
   ]
 }
