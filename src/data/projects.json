@@ -1,8 +1,21 @@
 {
   "projects": [
     {
+      "title": "Portfolio 2025",
+      "description": "Updated portfolio to showcase my projects and skills.",
+      "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/kevinphanle/EarthFlix",
+          "icon": "github"
+        }
+      ],
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Earthflix+Splash.webp"
+    },
+    {
       "title": "EarthFlix",
-      "description": "Nature video streaming service modeled after Netflix. This is one of the favorite projects as I have been with it since the beginning of my career as a developer. I have learned many techniques through Earthflix.",
+      "description": "Nature video streaming service modeled after Netflix.",
       "stack": ["Ruby", "Rails", "React", "Redux", "PostgreSQL"],
       "links": [
         {

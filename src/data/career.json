@@ -1,7 +1,7 @@
 {
   "career": [
     {
-      "title": "UI Engineer",
+      "title": "UI Engineer (Contract)",
       "icon": {
         "url": "/work-icons/apple.png",
         "alt": "Apple",
@@ -11,7 +11,9 @@
       "location": "Sunnyvale, California",
       "startDate": "Dec 2024",
       "endDate": "Present",
-      "description": "Description"
+      "info": [
+        "Developed and maintained the front-end of the Apple Online Store using React, Redux, and Node.js."
+      ]
     },
     {
       "title": "Frontend Web Developer",
@@ -24,7 +26,9 @@
       "location": "San Francisco, California",
       "startDate": "Jun 2021",
       "endDate": "Nov 2024",
-      "description": "Description"
+      "info": [
+        "Developed and maintained the front-end of the Apple Online Store using React, Redux, and Node.js."
+      ]
     }
   ]
 }

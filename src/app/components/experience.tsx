@@ -10,7 +10,7 @@ export const Experience = () => {
   const education = educationSchema.parse(educationData).education;
 
   return (
-    <div>
+    <div id="experience">
       <section className="my-9 text-sm">
         <Tabs defaultValue="experience" className="w-full">
           <TabsList>

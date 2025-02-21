@@ -6,7 +6,7 @@ export const Projects = () => {
   const projects = projectSchema.parse(projectData).projects;
 
   return (
-    <div>
+    <div id="projects">
       <h3 className="mb-4">Projects</h3>
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {projects.map((project, i) => (

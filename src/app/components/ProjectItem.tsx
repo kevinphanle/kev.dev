@@ -28,8 +28,8 @@ export function ProjectItem({ project }: Props) {
     }
   };
   return (
-    <li>
-      <Card>
+    <li className="flex flex-col h-full">
+      <Card className="flex flex-col h-full">
         <CardHeader>
           {image && (
             <Link
@@ -51,7 +51,7 @@ export function ProjectItem({ project }: Props) {
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardContent>
-        <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
+        <CardFooter className="flex flex-col items-start justify-between gap-4">
           {stack && stack.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">
               {stack.toSorted().map((tag) => (

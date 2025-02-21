@@ -1,5 +1,23 @@
 import { z } from "zod";
 
+export const bio = z.object({
+  avatar: z.string(),
+  name: z.string(),
+  description: z.string(),
+  jobTitle: z.string(),
+  location: z.string(),
+  about: z.string(),
+  contacts: z.array(
+    z.object({
+      label: z.string(),
+      value: z.string(),
+    })
+  ),
+});
+
+export const bioSchema = z.object({ bio: bio });
+export type Bio = z.infer<typeof bio>;
+
 export const project = z.object({
   title: z.string(),
   description: z.string(),
@@ -28,7 +46,7 @@ export const experience = z.object({
   location: z.string(),
   startDate: z.string(),
   endDate: z.string(),
-  description: z.string(),
+  info: z.array(z.string()),
 });
 export type Experience = z.infer<typeof experience>;
 
