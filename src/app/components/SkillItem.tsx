@@ -16,12 +16,12 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
 
   return (
     <section className="my-2">
-      <h5 className="text-md font-semibold">{capitalizedTitle}</h5>
+      <h5 className="text-md font-semibold mb-2">{capitalizedTitle}</h5>
       <div className="flex flex-wrap gap-2">
         {skill.map((item: Skill, index: number) => (
           <li
             key={index}
-            className="flex items-center justify-center text-xs rounded-md border shadow py-1 px-2 gap-1 transition-all hover:shadow-md hover:scale-105 hover:animate-skill-hover cursor-pointer"
+            className="flex items-center justify-center text-sm rounded-md border shadow py-4 px-4 gap-1 transition-all hover:shadow-md  hover:animate-skill-hover "
           >
             {item.icon && (
               <Image

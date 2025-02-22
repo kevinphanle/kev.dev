@@ -4,7 +4,8 @@
       "icon": {
         "url": "/education-icons/app-academy.webp",
         "alt": "App Academy",
-        "bgColor": "#fff"
+        "bgColor": "#fff",
+        "link": "https://www.appacademy.io/"
       },
       "company": "App Academy",
       "focus": "Full Stack Web Development (Bootcamp)",
@@ -17,7 +18,8 @@
       "icon": {
         "url": "/education-icons/sjsu.webp",
         "alt": "SJSU",
-        "bgColor": "#fff"
+        "bgColor": "#fff",
+        "link": "https://www.sjsu.edu/"
       },
       "company": "San Jose State University",
       "focus": "Materials Engineering - taken a sabatical to pursue software engineering",

@@ -1,10 +1,10 @@
 "use client";
 
 const navLinks = [
-  { name: "Home", href: "top" },
-  { name: "Experience", href: "experience" },
-  { name: "Skills", href: "skills" },
-  { name: "Projects", href: "projects" },
+  { name: "home", href: "top" },
+  { name: "experience", href: "experience" },
+  { name: "skills", href: "skills" },
+  { name: "projects", href: "projects" },
 ];
 
 export default function Header() {

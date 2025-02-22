@@ -5,7 +5,8 @@
       "icon": {
         "url": "/work-icons/apple.webp",
         "alt": "Apple",
-        "bgColor": "#fff"
+        "bgColor": "#fff",
+        "link": "https://www.apple.com/"
       },
       "company": "Apple",
       "location": "Sunnyvale, California",
@@ -20,7 +21,8 @@
       "icon": {
         "url": "/work-icons/zendesk.svg",
         "alt": "Zendesk",
-        "bgColor": "#fff"
+        "bgColor": "#fff",
+        "link": "https://www.zendesk.com/"
       },
       "company": "Zendesk",
       "location": "San Francisco, California",

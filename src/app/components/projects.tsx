@@ -35,9 +35,9 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div id="projects">
-      <div className="flex items-center justify-between w-full mb-8">
-        <h3 className="text-primary font-semibold">Projects</h3>
+    <div id="projects" className="py-10 border-b">
+      <div className="flex items-center justify-between w-full mb-4">
+        <h3 className="mb-1 text-2xl italic font-semibold">projects</h3>
         <Select onValueChange={handleFilter}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Technology" />
@@ -54,33 +54,14 @@ export const Projects = () => {
       <div className="project-filter"></div>
 
       <AnimatePresence mode="wait">
-        {projects.length === 0 && (
-          <motion.p
-            key="no-projects"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-primary"
-          >
-            No projects found.
-          </motion.p>
-        )}
-
-        {projects.length && (
-          <motion.ul
-            key="projects"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
-          >
-            {projects.map((project, i) => (
-              <ProjectItem key={i} project={project} />
-            ))}
-          </motion.ul>
-        )}
+        <motion.ul
+          key="projects"
+          className="min-h-[350px] grid grid-cols-1 gap-4 sm:grid-cols-2"
+        >
+          {projects.map((project, i) => (
+            <ProjectItem key={i} project={project} />
+          ))}
+        </motion.ul>
       </AnimatePresence>
     </div>
   );

@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { motion, AnimatePresence } from "motion/react";
 import { Project } from "@/lib/schemas";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,13 +23,20 @@ export function ProjectItem({ project }: Props) {
   const getIcon = (link: { icon: string }) => {
     switch (link.icon) {
       case "github":
-        return <Github name="github" className="size-3" />;
+        return <Github name="github" className="size-4" />;
       default:
-        return <ExternalLink name="external-link" className="size-3" />;
+        return <ExternalLink name="external-link" className="size-4" />;
     }
   };
   return (
-    <li className="flex flex-col h-full">
+    <motion.li
+      key={title}
+      initial={{ height: 0 }}
+      animate={{ height: "auto" }}
+      exit={{ height: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col h-full"
+    >
       <Card className="flex flex-col h-full">
         <CardHeader>
           {image && (
@@ -43,7 +51,7 @@ export function ProjectItem({ project }: Props) {
         </CardHeader>
 
         <CardContent className="flex flex-col gap-2 grow">
-          <CardTitle>{title}</CardTitle>
+          <CardTitle className="text-lg">{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardContent>
 
@@ -53,7 +61,7 @@ export function ProjectItem({ project }: Props) {
               {stack.toSorted().map((tag) => (
                 <Badge
                   key={tag}
-                  className="px-1 py-0 text-[10px]"
+                  className="px-2 py-1 text-xs "
                   variant="secondary"
                 >
                   {tag}
@@ -63,7 +71,7 @@ export function ProjectItem({ project }: Props) {
           )}
 
           {links && links.length > 0 && (
-            <div className="flex flex-row flex-wrap items-start gap-1">
+            <div className="flex flex-row flex-wrap items-end gap-1">
               {links.toSorted().map((link, idx) => (
                 <Link href={link?.href} key={idx} target="_blank">
                   <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
@@ -75,6 +83,6 @@ export function ProjectItem({ project }: Props) {
           )}
         </CardFooter>
       </Card>
-    </li>
+    </motion.li>
   );
 }

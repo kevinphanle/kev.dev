@@ -15,19 +15,19 @@ export const Experience = () => {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
-    <div id="experience">
-      <section className="my-9 text-sm">
+    <div id="experience" className="py-10 border-y">
+      <section className="text-sm">
         <Tabs
           defaultValue="experience"
           className="w-full"
           onValueChange={(value) => setActiveTab(value)}
         >
           <TabsList className="mb-2 grid w-full grid-cols-2">
-            <TabsTrigger value="experience" className="tracking-[0.5px]">
-              Experience
+            <TabsTrigger value="experience" className="tracking-[0.5px] italic">
+              experience
             </TabsTrigger>
-            <TabsTrigger value="education" className="tracking-[0.5px]">
-              Education
+            <TabsTrigger value="education" className="tracking-[0.5px] italic">
+              education
             </TabsTrigger>
           </TabsList>
           <AnimatePresence mode="wait">

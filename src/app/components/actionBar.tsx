@@ -6,7 +6,7 @@ import Socials from "./Socials";
 
 export const ActionBar = () => {
   return (
-    <section className="flex items-center">
+    <section className="flex items-center mb-10">
       <Button variant="outline" className="mr-4">
         <Link
           href="/Resume 2024.pdf"

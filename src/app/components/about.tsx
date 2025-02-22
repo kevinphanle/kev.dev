@@ -1,24 +1,16 @@
 export default function About() {
   return (
     <section className="my-9 text-sm">
-      <h3 className="mb-1 text-md font-semibold">About</h3>
-      <div className="text-muted-foreground">
-        {/* {about.split("\n").map((paragraph: string, index: number) => (
-          <p
-            key={index}
-            className="mb-4 text-lg"
-            dangerouslySetInnerHTML={{ __html: paragraph }}
-          ></p>
-        ))} */}
-
-        <p className="mb-4 text-lg">
+      <h3 className="mb-1 text-2xl italic font-semibold">about</h3>
+      <div className="text-slate-700">
+        <p className="mb-6 text-lg">
           {" "}
           As a Frontend Developer with a unique background in hospitality, I
           bring a distinctive blend of resourcefulness and adaptability to
           building user-friendly interfaces and experiences.
         </p>
 
-        <p className="mb-4 text-lg">
+        <p className="text-lg">
           Outside of coding, I enjoy volleyball{" "}
           <span className="inline-block hover:animate-bounce">🏐</span>,
           backpacking{" "}

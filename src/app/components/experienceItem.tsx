@@ -12,6 +12,7 @@ interface ExperienceItemProps {
       url: string;
       alt: string;
       bgColor: string;
+      link?: string;
     };
     location?: string;
     focus?: string;
@@ -23,7 +24,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
   return (
     <li className="relative ml-10 flex items-center p-4">
       <Link
-        href="#"
+        href={experience.icon.link}
         className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
       >
         <Avatar className="size-12 border">
@@ -53,14 +54,13 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
         {experience.focus && (
           <p className="text-muted-foreground">{experience.focus}</p>
         )}
-        <p className="text-muted-foreground text-sm">{experience.location}</p>
 
         <ul className="ml-4 list-outside list-disc">
           {experience.info &&
             experience.info?.map((item, index) => (
               <li
                 key={index}
-                className="prose pr-8 mb-2 text-base dark:prose-invert"
+                className="prose pr-8 mb-4 text-base dark:prose-invert"
               >
                 {item}
               </li>

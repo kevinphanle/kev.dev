@@ -18,6 +18,7 @@ export default function Home() {
       <Bio bio={bio} />
       <About />
       <ActionBar />
+
       <Experience />
       <Skills />
 
