@@ -1,5 +1,7 @@
-import Link from "next/link";
+"use client";
+
 import Socials from "./Socials";
+import { scrollToTop } from "@/lib/utils";
 
 export default function Footer() {
   return (
@@ -8,7 +10,7 @@ export default function Footer() {
       <section>
         <p>
           <span>&copy; {new Date().getFullYear()} </span>
-          <Link href="/">kevinphanle.dev</Link>
+          <button onClick={scrollToTop}>kevinphanle.dev</button>
         </p>
       </section>
     </footer>
