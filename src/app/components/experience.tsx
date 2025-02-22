@@ -13,9 +13,13 @@ export const Experience = () => {
     <div id="experience">
       <section className="my-9 text-sm">
         <Tabs defaultValue="experience" className="w-full">
-          <TabsList>
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
+          <TabsList className="mb-2 grid w-full grid-cols-2">
+            <TabsTrigger value="experience" className="tracking-[0.5px]">
+              Experience
+            </TabsTrigger>
+            <TabsTrigger value="education" className="tracking-[0.5px]">
+              Education
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="experience">
             <div className="border rounded-xl bg-card text-card-foreground shadow">

@@ -1,0 +1,108 @@
+{
+  "skills": {
+    "languages": [
+      {
+        "name": "JavaScript",
+        "icon": {
+          "url": "javascript/javascript-original.svg",
+          "alt": "JavaScript",
+          "bgColor": "#f7df1e"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "icon": {
+          "url": "typescript/typescript-original.svg",
+          "alt": "TypeScript",
+          "bgColor": "#3178c6"
+        }
+      },
+      {
+        "name": "HTML",
+        "icon": {
+          "url": "html5/html5-original.svg",
+          "alt": "HTML",
+          "bgColor": "#e34f26"
+        }
+      },
+      {
+        "name": "CSS",
+        "icon": {
+          "url": "css3/css3-original.svg",
+          "alt": "CSS",
+          "bgColor": "#1572b6"
+        }
+      }
+    ],
+    "frontend": [
+      {
+        "name": "React",
+        "icon": {
+          "url": "react/react-original.svg",
+          "alt": "React",
+          "bgColor": "#61dafb"
+        }
+      },
+      {
+        "name": "Next.js",
+        "icon": {
+          "url": "nextjs/nextjs-original.svg",
+          "alt": "Next.js",
+          "bgColor": "#000000"
+        }
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": {
+          "url": "tailwindcss/tailwindcss-original.svg",
+          "alt": "TailwindCSS",
+          "bgColor": "#06b6d4"
+        }
+      }
+    ],
+    "backend": [
+      {
+        "name": "Node.js",
+        "icon": {
+          "url": "nodejs/nodejs-original.svg",
+          "alt": "Node.js",
+          "bgColor": "#339933"
+        }
+      },
+      {
+        "name": "Express",
+        "icon": {
+          "url": "express/express-original.svg",
+          "alt": "Express",
+          "bgColor": "#000000"
+        }
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "icon": {
+          "url": "git/git-original.svg",
+          "alt": "Git",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "GitHub",
+        "icon": {
+          "url": "github/github-original.svg",
+          "alt": "GitHub",
+          "bgColor": "#181717"
+        }
+      },
+      {
+        "name": "VS Code",
+        "icon": {
+          "url": "vscode/vscode-original.svg",
+          "alt": "VS Code",
+          "bgColor": "#007acc"
+        }
+      }
+    ]
+  }
+}

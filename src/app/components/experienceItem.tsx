@@ -45,19 +45,23 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           </time>
         )}
 
-        <h4 className="text-lg font-semibold leading-none">
+        <h4 className="text-xl font-semibold leading-none">
           {experience.company}
         </h4>
-        <p className="text-muted-foreground my-0">{experience.title}</p>
+
+        <p className="text-muted-foreground my-0 text-sm">{experience.title}</p>
         {experience.focus && (
           <p className="text-muted-foreground">{experience.focus}</p>
         )}
-        <p className="text-muted-foreground">{experience.location}</p>
+        <p className="text-muted-foreground text-sm">{experience.location}</p>
 
         <ul className="ml-4 list-outside list-disc">
           {experience.info &&
             experience.info?.map((item, index) => (
-              <li key={index} className="prose pr-8 text-sm dark:prose-invert">
+              <li
+                key={index}
+                className="prose pr-8 mb-2 text-base dark:prose-invert"
+              >
                 {item}
               </li>
             ))}

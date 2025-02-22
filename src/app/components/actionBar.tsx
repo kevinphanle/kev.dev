@@ -10,7 +10,7 @@ export const ActionBar = () => {
       <Button variant="outline" className="mr-4">
         <Link
           href="/Resume 2024.pdf"
-          className="flex items-center gap-1"
+          className="flex items-center gap-1 tracking-[0.5px]"
           target="_blank"
         >
           <span>Resume</span> <FileDown size={16} />

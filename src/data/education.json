@@ -2,7 +2,7 @@
   "education": [
     {
       "icon": {
-        "url": "/education-icons/app-academy.png",
+        "url": "/education-icons/app-academy.webp",
         "alt": "App Academy",
         "bgColor": "#fff"
       },
@@ -15,7 +15,7 @@
     },
     {
       "icon": {
-        "url": "/education-icons/sjsu.png",
+        "url": "/education-icons/sjsu.webp",
         "alt": "SJSU",
         "bgColor": "#fff"
       },

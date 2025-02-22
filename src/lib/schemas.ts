@@ -73,3 +73,15 @@ export const socialLink = z.object({
   icon: z.string(),
 });
 export const socialSchema = z.object({ socials: z.array(socialLink) });
+
+export const skill = z.object({
+  name: z.string(),
+  icon: z.object({
+    url: z.string(),
+    alt: z.string(),
+    bgColor: z.string(),
+  }),
+});
+
+export const skillsSchema = z.object({ skills: z.array(skill) });
+export type Skill = z.infer<typeof skill>;

@@ -3,7 +3,7 @@
     {
       "title": "Portfolio 2025",
       "description": "Updated portfolio to showcase my projects and skills.",
-      "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
       "links": [
         {
           "name": "Source",
@@ -11,7 +11,7 @@
           "icon": "github"
         }
       ],
-      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Earthflix+Splash.webp"
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Portfolio+2025.webp"
     },
     {
       "title": "EarthFlix",

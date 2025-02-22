@@ -28,8 +28,8 @@ export function Bio({ bio }: BioProps) {
       />
 
       <div className="ml-4 flex-1">
-        <h1 className="mb-0.5 text-4xl">Hey, I&apos;m {bio.name}</h1>
-        <p className="text-muted-foreground text-sm">
+        <h1 className="inter-400 mb-0.5 text-5xl">Hey, I&apos;m {bio.name}</h1>
+        <p className="text-muted-foreground">
           {bio.jobTitle} based in {bio.location}
         </p>
       </div>
