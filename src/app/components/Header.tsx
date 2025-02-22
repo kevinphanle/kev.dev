@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
       <nav className="flex items-center justify-between">
-        <ul className="flex gap-4 sm:gap-4">
+        <ul className="flex gap-0 sm:gap-2">
           {navLinks.map(({ name, href }) => (
             <li key={name} className="nav-link">
               <Button
