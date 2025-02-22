@@ -61,6 +61,13 @@ export default {
         hank: 'url("/cursors/cursor-hank.png"), auto',
         lucy: 'url("/cursors/cursor-lucy.png"), auto',
       },
+      animation: {
+        bounce: "bounce 1s ease-in-out infinite",
+        walk: "walk 1s ease-in-out infinite",
+        controller: "controller 0.3s ease-in-out infinite",
+        wag: "wag 0.5s ease-in-out infinite",
+        "skill-hover": "skillHover 0.3s ease-in-out",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

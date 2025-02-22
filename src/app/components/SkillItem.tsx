@@ -21,7 +21,7 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
         {skill.map((item: Skill, index: number) => (
           <li
             key={index}
-            className="flex items-center justify-center text-xs rounded-md border shadow py-1 px-2 gap-1"
+            className="flex items-center justify-center text-xs rounded-md border shadow py-1 px-2 gap-1 transition-all hover:shadow-md hover:scale-105 hover:animate-skill-hover cursor-pointer"
           >
             {item.icon && (
               <Image

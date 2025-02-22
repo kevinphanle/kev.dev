@@ -19,8 +19,19 @@ export default function About() {
         </p>
 
         <p className="mb-4 text-lg">
-          Outside of coding, I enjoy volleyball 🏐, backpacking 🥾, playing
-          video games 🎮, and spending time with my dogs 🐕 (
+          Outside of coding, I enjoy volleyball{" "}
+          <span className="inline-block hover:animate-bounce">🏐</span>,
+          backpacking{" "}
+          <span className="">
+            <span className="inline-block hover:animate-walk">🥾</span>
+            <span className="inline-block ml-[-5px] hover:animate-walk [animation-delay:0.5s]">
+              🥾
+            </span>
+          </span>
+          , playing video games{" "}
+          <span className="inline-block hover:animate-controller">🎮</span>, and
+          spending time with my dogs{" "}
+          <span className="inline-block hover:animate-wag">🐕</span> (
           <span className="cursor-bert">Bert</span>,{" "}
           <span className="cursor-hank">Hank</span>, and{" "}
           <span className="cursor-lucy">Lucy</span>). I&apos;m always looking
