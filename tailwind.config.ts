@@ -57,7 +57,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       cursor: {
-        "cursor-bert": 'url("/cursors/cursor-bert.png"), auto',
+        bert: 'url("/cursors/cursor-bert.png"), auto',
+        hank: 'url("/cursors/cursor-hank.png"), auto',
+        lucy: 'url("/cursors/cursor-lucy.png"), auto',
       },
     },
   },

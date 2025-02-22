@@ -16,7 +16,7 @@ export default function Home() {
     <main className="mx-auto min-h-screen max-w-3xl px-6 py-5 font-light">
       <Header />
       <Bio bio={bio} />
-      <About about={bio.about} />
+      <About />
       <ActionBar />
       <Experience />
       <Skills />

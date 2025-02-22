@@ -6,7 +6,6 @@ export const bio = z.object({
   description: z.string(),
   jobTitle: z.string(),
   location: z.string(),
-  about: z.string(),
   contacts: z.array(
     z.object({
       label: z.string(),
