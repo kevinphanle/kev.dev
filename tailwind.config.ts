@@ -66,7 +66,14 @@ export default {
         walk: "walk 1s ease-in-out infinite",
         controller: "controller 0.3s ease-in-out infinite",
         wag: "wag 0.5s ease-in-out infinite",
-        "skill-hover": "skillHover 0.3s ease-in-out",
+        "skill-hover": "skillHover 0.5s ease-in-out",
+        "icon-spin": "iconSpin 2s linear infinite",
+      },
+      boxShadow: {
+        skill:
+          "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        "skill-hover":
+          "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
       },
     },
   },

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="my-9 text-sm">
-      <h3 className="mb-1 text-2xl italic font-semibold">about</h3>
+      <h3 className="mb-1 text-2xl italic font-semibold ">about</h3>
       <div className="text-slate-700">
         <p className="mb-6 text-lg dark:text-slate-300">
           {" "}

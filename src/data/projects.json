@@ -3,7 +3,14 @@
     {
       "title": "Portfolio 2025",
       "description": "Updated portfolio to showcase my projects and skills.",
-      "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn/ui",
+        "Motion"
+      ],
       "links": [
         {
           "name": "Source",

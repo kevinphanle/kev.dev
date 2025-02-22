@@ -15,13 +15,23 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
   }
 
   return (
-    <section className="my-2">
-      <h5 className="text-md font-semibold mb-2">{capitalizedTitle}</h5>
+    <section className="my-4">
+      <h5 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">
+        {capitalizedTitle}
+      </h5>
       <div className="flex flex-wrap gap-2">
         {skill.map((item: Skill, index: number) => (
           <li
             key={index}
-            className="flex items-center justify-center text-sm rounded-md border shadow py-4 px-4 gap-1 transition-all hover:shadow-md  hover:animate-skill-hover "
+            className="group flex items-center justify-center text-sm rounded-lg 
+                       border border-slate-200 dark:border-slate-700
+                       bg-white dark:bg-slate-800
+                       shadow-skill dark:shadow-none
+                       py-2 px-4 gap-2
+                       transition-all duration-300 ease-in-out
+                       hover:scale-110 hover:shadow-skill-hover
+                       hover:border-slate-300 dark:hover:border-slate-600
+                       cursor-pointer"
           >
             {item.icon && (
               <Image
@@ -29,10 +39,13 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
                 alt={item.name}
                 width={20}
                 height={20}
+                className="transition-transform duration-300"
               ></Image>
             )}
 
-            {item.name}
+            <span className="font-medium text-slate-700 dark:text-slate-300">
+              {item.name}
+            </span>
           </li>
         ))}
       </div>
