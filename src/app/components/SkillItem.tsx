@@ -1,18 +1,29 @@
 import React from "react";
-import { Skill } from "@/lib/schemas";
+// import { Skill } from "@/lib/schemas";
 import Image from "next/image";
+
+interface Skill {
+  name: string;
+  icon: {
+    url: string;
+    alt: string;
+    bgColor: string;
+  };
+}
 
 interface Props {
   skill: Skill[];
   title: string;
 }
-// className="px-2 flex items-center justify-center gap-[6px] py-1 text-[12px] font-medium rounded-md"
+
 const SkillItem: React.FC<Props> = ({ title, skill }) => {
   const capitalizedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
   function getDynamicIcon(iconUrl: string) {
     return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconUrl}`;
   }
+
+  console.log(skill);
 
   return (
     <section className="my-4">

@@ -84,5 +84,12 @@ export const skill = z.object({
   }),
 });
 
-export const skillsSchema = z.object({ skills: z.array(skill) });
+export const skillsSchema = z.object({
+  skills: z.object({
+    languages: z.array(skill),
+    tools: z.array(skill),
+    frontend: z.array(skill),
+    backend: z.array(skill),
+  }),
+});
 export type Skill = z.infer<typeof skill>;

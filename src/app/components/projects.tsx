@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ProjectItem } from "@/app/components/ProjectItem";
 import projectData from "@/data/projects.json";
@@ -23,16 +23,11 @@ export const Projects = () => {
       setProjects(baseProjects);
       return;
     }
-    setProjects(baseProjects);
     const filteredProjects = baseProjects.filter((project) =>
       project.stack.map((item) => item.toLowerCase()).includes(e)
     );
     setProjects(filteredProjects);
   };
-
-  useEffect(() => {
-    setProjects(baseProjects);
-  }, []);
 
   return (
     <div id="projects" className="py-10 border-b">
