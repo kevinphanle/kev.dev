@@ -45,7 +45,7 @@ export const experience = z.object({
   company: z.string(),
   location: z.string(),
   startDate: z.string(),
-  endDate: z.string(),
+  endDate: z.string().optional(),
   info: z.array(z.string()),
 });
 export type Experience = z.infer<typeof experience>;

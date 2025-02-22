@@ -7,7 +7,7 @@ interface ExperienceItemProps {
     company: string;
     title?: string;
     startDate: string;
-    endDate: string;
+    endDate?: string;
     icon: {
       url: string;
       alt: string;
