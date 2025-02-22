@@ -5,7 +5,7 @@
     "description": "I'm a software engineer who loves to build things.",
     "jobTitle": "Frontend Developer",
     "location": "San Jose, California",
-    "about": "As a Frontend Developer with a unique background in hospitality, I bring a distinctive blend of resourcefulness and adaptability to building user-friendly interfaces and experiences. \n\nOutside of coding, I enjoy volleyball 🏐, backpacking 🥾, playing video games 🎮, and spending time with my dogs 🐕 (bert, hank, and lucy). I'm always looking for opportunities to learn and grow as a developer.",
+    "about": "As a Frontend Developer with a unique background in hospitality, I bring a distinctive blend of resourcefulness and adaptability to building user-friendly interfaces and experiences. \n\nOutside of coding, I enjoy volleyball 🏐, backpacking 🥾, playing video games 🎮, and spending time with my dogs 🐕 (<span className=\"cursor-bert\">bert</span>, hank, and lucy). I'm always looking for opportunities to learn and grow as a developer.",
     "contacts": [
       {
         "label": "Email",

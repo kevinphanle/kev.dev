@@ -32,25 +32,21 @@ export function ProjectItem({ project }: Props) {
       <Card className="flex flex-col h-full">
         <CardHeader>
           {image && (
-            <Link
-              href={
-                links.find((link) => link.name === "website")?.href || image
-              }
-            >
-              <Image
-                src={image}
-                alt={title}
-                width={300}
-                height={200}
-                className="w-full object-cover object-top"
-              />
-            </Link>
+            <Image
+              src={image}
+              alt={title}
+              width={300}
+              height={200}
+              className="w-full object-cover"
+            />
           )}
         </CardHeader>
-        <CardContent className="flex flex-col gap-2">
+
+        <CardContent className="flex flex-col gap-2 grow">
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardContent>
+
         <CardFooter className="flex flex-col items-start justify-between gap-4">
           {stack && stack.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">

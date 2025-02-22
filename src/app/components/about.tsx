@@ -1,12 +1,18 @@
-export default function About({ about }) {
+interface AboutProps {
+  about: string;
+}
+
+export default function About({ about }: AboutProps) {
   return (
     <section className="my-9 text-sm">
       <h3 className="mb-1 text-md font-semibold">About</h3>
       <div className="text-muted-foreground">
         {about.split("\n").map((paragraph: string, index: number) => (
-          <p key={index} className="mb-4 text-lg">
-            {paragraph}
-          </p>
+          <p
+            key={index}
+            className="mb-4 text-lg"
+            dangerouslySetInnerHTML={{ __html: paragraph }}
+          ></p>
         ))}
       </div>
     </section>
