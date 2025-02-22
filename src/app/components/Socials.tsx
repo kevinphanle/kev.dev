@@ -25,7 +25,7 @@ export default function Socials() {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-500 hover:text-gray-700"
+          className="text-gray-500 dark:text-slate-300 hover:text-gray-700"
         >
           <span className="sr-only">{social.name}</span>
           {getIcon(social.name)}

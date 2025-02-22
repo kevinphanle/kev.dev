@@ -5,7 +5,7 @@ import { scrollToTop } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center py-4 sm:flex-row-reverse sm:justify-between">
+    <footer className="flex flex-col items-center justify-center py-10 sm:flex-row-reverse sm:justify-between">
       <Socials />
       <section>
         <p>

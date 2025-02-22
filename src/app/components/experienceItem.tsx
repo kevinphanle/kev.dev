@@ -24,14 +24,14 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
   return (
     <li className="relative ml-10 flex items-center p-4">
       <Link
-        href={experience.icon.link}
+        href={experience.icon.link || "#"}
         className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
       >
         <Avatar className="size-12 border">
           <AvatarImage
             alt={experience.icon.alt}
             src={experience.icon.url}
-            className="object-contain bg-background p-2"
+            className="object-contain bg-white p-2"
           />
           <AvatarFallback>{experience.icon.alt}</AvatarFallback>
         </Avatar>

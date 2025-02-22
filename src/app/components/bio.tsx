@@ -30,7 +30,7 @@ export function Bio({ bio }: BioProps) {
         <h1 className="inter-400 mb-0.5 text-2xl sm:text-4xl">
           Hey, I&apos;m {bio.name}
         </h1>
-        <p className="block text-slate-500 text-lg sm:text-xl">
+        <p className="block text-slate-500 dark:text-slate-300 text-lg sm:text-xl">
           {bio.jobTitle} based in {bio.location}
         </p>
       </div>

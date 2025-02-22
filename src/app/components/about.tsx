@@ -3,14 +3,14 @@ export default function About() {
     <section className="my-9 text-sm">
       <h3 className="mb-1 text-2xl italic font-semibold">about</h3>
       <div className="text-slate-700">
-        <p className="mb-6 text-lg">
+        <p className="mb-6 text-lg dark:text-slate-300">
           {" "}
           As a Frontend Developer with a unique background in hospitality, I
           bring a distinctive blend of resourcefulness and adaptability to
           building user-friendly interfaces and experiences.
         </p>
 
-        <p className="text-lg">
+        <p className="text-lg dark:text-slate-300">
           Outside of coding, I enjoy volleyball{" "}
           <span className="inline-block hover:animate-bounce">🏐</span>,
           backpacking{" "}
