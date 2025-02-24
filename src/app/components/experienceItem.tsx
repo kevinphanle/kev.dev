@@ -21,6 +21,31 @@ interface ExperienceItemProps {
 }
 
 export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
+  const calculateDuration = (startDate: string, endDate?: string) => {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate) : new Date();
+
+    let years = end.getFullYear() - start.getFullYear();
+    let months = end.getMonth() - start.getMonth();
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    let duration = "";
+
+    if (years > 0) {
+      duration += `${years} ${years === 1 ? "year" : "years"}`;
+    }
+
+    if (months > 0 || (months === 0 && years === 0)) {
+      if (duration) duration += " ";
+      duration += `${months} ${months === 1 ? "month" : "months"}`;
+    }
+
+    return `${duration}`;
+  };
+
   return (
     <li className="relative ml-10 flex items-center p-4">
       <Link
@@ -43,12 +68,17 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
             <span>{experience.startDate}</span>
             <span>{" - "}</span>
             <span>{experience.endDate ? experience.endDate : "Present"}</span>
+            <span> ⋅ </span>
+            <span>
+              {!experience.focus &&
+                calculateDuration(experience.startDate, experience.endDate)}
+            </span>
           </time>
         )}
 
-        <h4 className="text-xl font-semibold leading-none">
+        <h3 className="text-xl font-semibold leading-none">
           {experience.company}
-        </h4>
+        </h3>
 
         <p className="text-muted-foreground my-0 text-sm">{experience.title}</p>
         {experience.focus && (
