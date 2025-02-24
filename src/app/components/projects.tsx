@@ -32,8 +32,8 @@ export const Projects = () => {
   return (
     <div id="projects" className="py-10 border-b">
       <div className="flex items-center justify-between w-full mb-4">
-        <h3 className="mb-1 text-2xl italic font-semibold">projects</h3>
-        <Select onValueChange={handleFilter}>
+        <h2 className="mb-1 text-2xl italic font-semibold">projects</h2>
+        <Select onValueChange={handleFilter} aria-label="Filter projects">
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Technology" />
           </SelectTrigger>

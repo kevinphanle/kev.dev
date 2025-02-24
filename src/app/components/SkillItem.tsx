@@ -27,10 +27,10 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
 
   return (
     <section className="my-4">
-      <h5 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">
+      <h3 className="text-lg font-semibold mb-4 text-slate-800 dark:text-slate-200">
         {capitalizedTitle}
-      </h5>
-      <div className="flex flex-wrap gap-2">
+      </h3>
+      <ul className="flex flex-wrap gap-2">
         {sortedSkills.map((item: Skill, index: number) => (
           <li
             key={index}
@@ -47,7 +47,7 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
             {item.icon && (
               <Image
                 src={getDynamicIcon(item.icon.url)}
-                alt={item.name}
+                alt={item.name + "logo"}
                 width={20}
                 height={20}
                 className="transition-transform duration-300"
@@ -59,7 +59,7 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
             </span>
           </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

@@ -23,9 +23,21 @@ export function ProjectItem({ project }: Props) {
   const getIcon = (link: { icon: string }) => {
     switch (link.icon) {
       case "github":
-        return <Github name="github" className="size-4" />;
+        return (
+          <Github
+            name="github"
+            className="size-4"
+            aria-label="Link to Github repo"
+          />
+        );
       default:
-        return <ExternalLink name="external-link" className="size-4" />;
+        return (
+          <ExternalLink
+            name="external-link"
+            className="size-4"
+            aria-label="Link to project"
+          />
+        );
     }
   };
   return (

@@ -7,7 +7,7 @@ import Socials from "./Socials";
 export const ActionBar = () => {
   return (
     <section className="flex items-center mb-10">
-      <Button className="mr-4">
+      <Button className="mr-6">
         <Link
           href="/Resume 2024.pdf"
           className="flex items-center gap-1 tracking-[0.5px]"
