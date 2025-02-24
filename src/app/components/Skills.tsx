@@ -7,7 +7,6 @@ type SkillCategory = keyof typeof skillsData.skills;
 
 const Skills: React.FC = () => {
   const skills = skillsSchema.parse(skillsData).skills;
-  console.log(skills);
 
   return (
     <div
