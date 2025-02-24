@@ -1,7 +1,7 @@
 {
   "career": [
     {
-      "title": "UI Engineer (Contract)",
+      "title": "UI Engineer",
       "icon": {
         "url": "/work-icons/apple.webp",
         "alt": "Apple",
@@ -14,10 +14,11 @@
       "endDate": "Feb 2025",
       "info": [
         "Developed custom internal tools for Apple's internal teams using Vue and TypeScript"
-      ]
+      ],
+      "type": "Contract"
     },
     {
-      "title": "Frontend Web Developer",
+      "title": "Front End Web Developer",
       "icon": {
         "url": "/work-icons/zendesk.svg",
         "alt": "Zendesk",
@@ -33,7 +34,8 @@
         "Developed custom integrations with third-party APIs to create tailored solutions for clients, enhancing application scalability and security, which resulted in improved client satisfaction and retention",
         "Designed and iterated architecture for frontend interfaces, ensuring strong performance and leveraging data structures for efficient data handling, which led to faster load times and improved application responsiveness",
         "Collaborated with cross-functional teams including engineers and UX designers to scope out and implement custom applications aligned with customer needs."
-      ]
+      ],
+      "type": "Full-time"
     }
   ]
 }

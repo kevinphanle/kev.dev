@@ -17,6 +17,7 @@ interface ExperienceItemProps {
     location?: string;
     focus?: string;
     info?: string[];
+    type?: string;
   };
 }
 
@@ -64,34 +65,37 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
       </Link>
 
       <div className="flex flex-col justify-start gap-1 flex-1">
+        <h3 className="text-xl font-semibold leading-none">
+          {experience.title}
+        </h3>
+        <p className="my-0 text-sm">
+          {experience.company} {experience.type && ` ⋅ ${experience.type}`}
+        </p>
         {experience.startDate && (
           <time className="text-xs text-muted-foreground">
             <span>{experience.startDate}</span>
             <span>{" - "}</span>
-            <span>{experience.endDate ? experience.endDate : "Present"}</span>
-            <span> ⋅ </span>
-            <span>
-              {!experience.focus &&
-                calculateDuration(experience.startDate, experience.endDate)}
-            </span>
+            <span>{experience.endDate ? experience.endDate : "Present"} </span>
+
+            {!experience.focus && (
+              <span className="inline-block text-muted-foreground">
+                <span>{" ⋅ "}</span>
+                {calculateDuration(experience.startDate, experience.endDate)}
+              </span>
+            )}
           </time>
         )}
 
-        <h3 className="text-xl font-semibold leading-none">
-          {experience.company}
-        </h3>
-
-        <p className="text-muted-foreground my-0 text-sm">{experience.title}</p>
         {experience.focus && (
           <p className="text-muted-foreground">{experience.focus}</p>
         )}
 
-        <ul className="ml-4 list-outside list-disc">
+        <ul className="mt-4">
           {experience.info &&
             experience.info?.map((item, index) => (
               <li
                 key={index}
-                className="prose pr-8 mb-4 text-base dark:prose-invert"
+                className="prose pr-8 mb-3 text-base dark:prose-invert"
               >
                 {item}
               </li>
