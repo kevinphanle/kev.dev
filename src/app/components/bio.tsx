@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface BioProps {
   bio: {
@@ -18,13 +18,14 @@ interface BioProps {
 export function Bio({ bio }: BioProps) {
   return (
     <section className="flex items-center">
-      <Image
-        alt="author"
-        src={bio.avatar}
-        width={80}
-        height={80}
-        className="rounded-full object-cover size-[80px]"
-      />
+      <Avatar className="w-[80px] h-[80px] ">
+        <AvatarImage
+          className="object-cover"
+          src={bio.avatar}
+          alt="Kevin Le headshot"
+        />
+        <AvatarFallback delayMs={600}>KL</AvatarFallback>
+      </Avatar>
 
       <div className="ml-4 flex-1">
         <h1 className="inter-400 mb-0.5 text-2xl sm:text-4xl">
