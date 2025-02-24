@@ -56,6 +56,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           <AvatarImage
             alt={experience.icon.alt}
             src={experience.icon.url}
+            loading="lazy"
             className="object-contain bg-white p-2"
           />
           <AvatarFallback>{experience.icon.alt}</AvatarFallback>
