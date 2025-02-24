@@ -36,10 +36,18 @@
     ],
     "frontend": [
       {
-        "name": "React",
+        "name": "React.js",
         "icon": {
           "url": "react/react-original.svg",
           "alt": "React",
+          "bgColor": "#61dafb"
+        }
+      },
+      {
+        "name": "Vue.js",
+        "icon": {
+          "url": "vuejs/vuejs-original.svg",
+          "alt": "Vue",
           "bgColor": "#61dafb"
         }
       },
@@ -84,6 +92,30 @@
         "icon": {
           "url": "git/git-original.svg",
           "alt": "Git",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "Chrome DevTools",
+        "icon": {
+          "url": "chrome/chrome-original.svg",
+          "alt": "Chrome",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "Postman",
+        "icon": {
+          "url": "postman/postman-original.svg",
+          "alt": "Postman",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "Figma",
+        "icon": {
+          "url": "figma/figma-original.svg",
+          "alt": "Figma",
           "bgColor": "#f05032"
         }
       },

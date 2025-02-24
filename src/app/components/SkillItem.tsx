@@ -19,11 +19,11 @@ interface Props {
 const SkillItem: React.FC<Props> = ({ title, skill }) => {
   const capitalizedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
+  const sortedSkills = [...skill].sort((a, b) => a.name.localeCompare(b.name));
+
   function getDynamicIcon(iconUrl: string) {
     return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconUrl}`;
   }
-
-  console.log(skill);
 
   return (
     <section className="my-4">
@@ -31,7 +31,7 @@ const SkillItem: React.FC<Props> = ({ title, skill }) => {
         {capitalizedTitle}
       </h5>
       <div className="flex flex-wrap gap-2">
-        {skill.map((item: Skill, index: number) => (
+        {sortedSkills.map((item: Skill, index: number) => (
           <li
             key={index}
             className="group flex items-center justify-center text-sm rounded-lg 
