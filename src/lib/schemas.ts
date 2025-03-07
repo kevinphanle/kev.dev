@@ -64,6 +64,7 @@ export const education = z.object({
   startDate: z.string(),
   endDate: z.string().optional(),
   description: z.string(),
+  info: z.array(z.string()),
 });
 
 export const careerSchema = z.object({ career: z.array(experience) });

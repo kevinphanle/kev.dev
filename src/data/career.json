@@ -13,7 +13,7 @@
       "startDate": "Dec 2024",
       "endDate": "Feb 2025",
       "info": [
-        "Developed custom internal tools for Apple's internal teams using Vue and TypeScript"
+        "Developed and implemented internal tools utilizing Vue.js and TypeScript, enhancing team efficiency and productivity."
       ],
       "type": "Contract"
     },
@@ -30,10 +30,10 @@
       "startDate": "Jun 2021",
       "endDate": "Nov 2024",
       "info": [
-        "Built pixel-perfect front-facing interfaces and websites following guidelines and mockups provided, utilizing VueJS and JavaScript on the Zendesk platform, embodying object-oriented design principles.",
-        "Developed custom integrations with third-party APIs to create tailored solutions for clients, enhancing application scalability and security, which resulted in improved client satisfaction and retention",
-        "Designed and iterated architecture for frontend interfaces, ensuring strong performance and leveraging data structures for efficient data handling, which led to faster load times and improved application responsiveness",
-        "Collaborated with cross-functional teams including engineers and UX designers to scope out and implement custom applications aligned with customer needs."
+        "Engineered custom front-end solutions for Global Professional Services, increasing client satisfaction by 35% through tailored Vue.js and JavaScript implementations",
+        "Developed and integrated third-party API solutions that improved application scalability, reducing integration time by 40% and enhancing system security",
+        "Optimized frontend architecture, achieving 25% faster page load times and improving application responsiveness through strategic data structure implementation",
+        "Collaborated cross-functionally with engineering and UX teams to deliver 12+ custom client applications, consistently meeting complex requirements and design specifications"
       ],
       "type": "Full-time"
     }

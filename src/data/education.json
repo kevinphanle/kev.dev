@@ -12,7 +12,10 @@
       "location": "San Francisco, CA",
       "startDate": "Jun 2019",
       "endDate": "Aug 2019",
-      "description": "Description"
+      "description": "Description",
+      "info": [
+        "Completed intensive program covering Test-Driven Development, scalable architecture, algorithms, and web development methodologies and best practices"
+      ]
     },
     {
       "icon": {
@@ -22,11 +25,15 @@
         "link": "https://www.sjsu.edu/"
       },
       "company": "San Jose State University",
-      "focus": "Materials Engineering - taken a sabatical to pursue software engineering",
+      "focus": "Materials Engineering",
       "location": "San Jose, California",
       "startDate": "2015",
       "endDate": "2018",
-      "description": "Description"
+      "description": "Description",
+      "info": [
+        "Academic background in technical problem-solving and analytical thinking, with a focus on materials science and engineering principles",
+        "Taken a sabatical to pursue software engineering"
+      ]
     }
   ]
 }
