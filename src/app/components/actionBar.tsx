@@ -9,7 +9,7 @@ export const ActionBar = () => {
     <section className="flex items-center mb-10 gap-8">
       <Button aria-label="Download Resume">
         <Link
-          href="/Resume 2024.pdf"
+          href="/Resume 2025.pdf"
           className="flex items-center gap-1 tracking-[0.5px] min-h-[48px] min-w-[48px]"
           target="_blank"
         >
