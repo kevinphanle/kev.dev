@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "title": "Thirteen Card Game",
+      "description": "Thirteen Card Game is a multiplayer card game where players try to get rid of all their cards first.",
+      "stack": ["React", "TypeScript", "CSS Modules", "Context API", "Vite"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/kevinphanle/ThirteenCardGame",
+          "icon": "github"
+        },
+        {
+          "name": "Website",
+          "href": "https://thirteen-card-game-174lb4xjv-kevins-projects-98e0c2f2.vercel.app/",
+          "icon": "external"
+        }
+      ],
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/thirteen.webp"
+    },
+    {
       "title": "Portfolio 2025",
       "description": "Updated portfolio to showcase my projects and skills.",
       "stack": [
