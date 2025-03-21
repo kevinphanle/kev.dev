@@ -45,7 +45,10 @@
         "TypeScript",
         "Tailwind CSS",
         "Shadcn/ui",
-        "Motion"
+        "Motion",
+        "Vercel",
+        "Lucide Icons",
+        "pnpm"
       ],
       "links": [
         {
