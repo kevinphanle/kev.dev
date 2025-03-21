@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "title": "Pokemon Guesser Game",
+      "description": "A fun and interactive game where users guess the Pokemon based on its silhouette.",
+      "stack": ["React", "TypeScript", "Next.js", "TailwindCSS", "PokeAPI"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/kevinphanle/pokemon-guesser",
+          "icon": "github"
+        },
+        {
+          "name": "Website",
+          "href": "https://pokemon-guesser-95hvjg2w4-kevins-projects-98e0c2f2.vercel.app/",
+          "icon": "external"
+        }
+      ],
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Poke+Guesser.webp"
+    },
+    {
       "title": "Thirteen Card Game",
       "description": "Thirteen Card Game is a multiplayer card game where players try to get rid of all their cards first.",
       "stack": ["React", "TypeScript", "CSS Modules", "Context API", "Vite"],
