@@ -10,7 +10,7 @@ export default function About() {
           building user-friendly interfaces and experiences.
         </p>
 
-        <p className="text-lg dark:text-slate-300">
+        <p className="mb-6 text-lg dark:text-slate-300">
           Outside of coding, I enjoy volleyball{" "}
           <span className="inline-block hover:animate-bounce">🏐</span>,
           backpacking{" "}
@@ -21,13 +21,19 @@ export default function About() {
             </span>
           </span>
           , playing video games{" "}
-          <span className="inline-block hover:animate-controller">🎮</span>, and
-          spending time with my dogs{" "}
+          <span className="inline-block hover:animate-controller">🎮</span>{" "}
+          (Currently Dyson Sphere Program), and spending time with my dogs{" "}
           <span className="inline-block hover:animate-wag">🐕</span> (
           <span className="cursor-bert">Bert</span>,{" "}
           <span className="cursor-hank">Hank</span>, and{" "}
           <span className="cursor-lucy">Lucy</span>). I&apos;m always looking
           for opportunities to learn and grow as a developer.
+        </p>
+
+        <p className="text-lg dark:text-slate-300">
+          My current goal is to grow into a Senior Frontend Developer, someone
+          who is the go-to person for building efficient and intuitive user
+          experiences.
         </p>
       </div>
     </section>
