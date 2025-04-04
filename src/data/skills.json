@@ -32,6 +32,14 @@
           "alt": "CSS",
           "bgColor": "#1572b6"
         }
+      },
+      {
+        "name": "Ruby",
+        "icon": {
+          "url": "ruby/ruby-original.svg",
+          "alt": "Ruby",
+          "bgColor": "#1572b6"
+        }
       }
     ],
     "frontend": [
@@ -84,6 +92,14 @@
           "alt": "Express",
           "bgColor": "#000000"
         }
+      },
+      {
+        "name": "Rails",
+        "icon": {
+          "url": "rails/rails-original-wordmark.svg",
+          "alt": "Rails",
+          "bgColor": "#000000"
+        }
       }
     ],
     "tools": [
@@ -133,6 +149,40 @@
           "url": "vscode/vscode-original.svg",
           "alt": "VS Code",
           "bgColor": "#007acc"
+        }
+      },
+      {
+        "name": "BrowserStack",
+        "icon": {
+          "url": "browserstack/browserstack-original.svg",
+          "alt": "BrowserStack",
+          "bgColor": "#007acc"
+        }
+      }
+    ],
+    "testing": [
+      {
+        "name": "Playwright",
+        "icon": {
+          "url": "playwright/playwright-original.svg",
+          "alt": "Playwright",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "Mocha",
+        "icon": {
+          "url": "mocha/mocha-original.svg",
+          "alt": "Mocha",
+          "bgColor": "#f05032"
+        }
+      },
+      {
+        "name": "Vitest",
+        "icon": {
+          "url": "vitest/vitest-original.svg",
+          "alt": "Vitest",
+          "bgColor": "#f05032"
         }
       }
     ]
