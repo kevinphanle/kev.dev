@@ -29,6 +29,7 @@ export const project = z.object({
     })
   ),
   image: z.string().optional(),
+  deprecated: z.boolean().optional(),
 });
 
 export const projectSchema = z.object({ projects: z.array(project) });
@@ -92,6 +93,7 @@ export const skillsSchema = z.object({
     tools: z.array(skill),
     frontend: z.array(skill),
     backend: z.array(skill),
+    testing: z.array(skill),
   }),
 });
 export type Skill = z.infer<typeof skill>;

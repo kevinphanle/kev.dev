@@ -70,7 +70,8 @@
           "icon": "github"
         }
       ],
-      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Earthflix+Splash.webp"
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Earthflix+Splash.webp",
+      "deprecated": true
     },
     {
       "title": "Unshelled",
@@ -83,7 +84,8 @@
           "icon": "github"
         }
       ],
-      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Unshelled+Splash.webp"
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Unshelled+Splash.webp",
+      "deprecated": true
     },
     {
       "title": "Ripcamp",
@@ -103,7 +105,8 @@
           "icon": "github"
         }
       ],
-      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Ripcamp+Splash.webp"
+      "image": "https://personal-portfolio-kevin-le.s3.us-west-1.amazonaws.com/Portfolio+2025+WebP+Images/Ripcamp+Splash.webp",
+      "deprecated": true
     },
     {
       "title": "Google Keep Clone",

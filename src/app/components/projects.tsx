@@ -23,6 +23,15 @@ export const Projects = () => {
       setProjects(baseProjects);
       return;
     }
+
+    if (e === "deprecated") {
+      const filteredProjects = baseProjects.filter(
+        (project) => project.deprecated
+      );
+      setProjects(filteredProjects);
+      return;
+    }
+
     const filteredProjects = baseProjects.filter((project) =>
       project.stack.map((item) => item.toLowerCase()).includes(e)
     );
@@ -40,9 +49,11 @@ export const Projects = () => {
           <SelectContent>
             <SelectItem value="all">All</SelectItem>
             <SelectItem value="canvas">Canvas</SelectItem>
+            <SelectItem value="typescript">TypeScript</SelectItem>
             <SelectItem value="react">React</SelectItem>
             <SelectItem value="ruby">Ruby</SelectItem>
             <SelectItem value="node.js">Node.js</SelectItem>
+            <SelectItem value="deprecated">Deprecated</SelectItem>
           </SelectContent>
         </Select>
       </div>
